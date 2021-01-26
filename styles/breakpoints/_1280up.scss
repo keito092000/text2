@@ -1,0 +1,510 @@
+  .header-pc{
+    display:block;
+    position: relative;
+    height:100px;
+  
+    & img{
+      position: relative;
+      bottom:30px;
+      width:160px;
+    }
+  
+    .flex{
+     position: absolute;
+     top:60px;
+     left:50%;
+     transform: translate(-20%,-50%);
+  
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width:700px;
+  
+     & a{
+       color:black;
+     }
+    }
+  }
+  .header-pe{
+    display: none;
+  }
+  .header-td{
+    display: none;
+  }
+
+  .own-pc{
+    display: block;
+    background-image: url("https://clairekinnell.com/wp-content/uploads/2019/07/Contact-Me-Image-1.jpg");
+    background-size: cover;
+    height:650px;
+
+    &::after{
+      content: '';
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100px;
+      bottom: 0;
+      height:650px;
+    }
+
+    .box1{
+     position: absolute;
+     top:400px;
+     left:50%;
+     transform: translate(-80%,-50%);
+     height:400px;
+     width:600px;
+
+     padding: 0.5em 1em;
+     margin: 2em 0;
+     font-weight: bold;
+     background-color:rgba(255,255,255,0.75);
+     z-index: 100;
+
+     & h1{
+       position: absolute;
+       top:140px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       width:560px;
+       font-family: 'Noto Serif JP', serif;
+       font-weight: bold;
+       font-size: 35px;
+     }
+     & p{
+       position: absolute;
+       top:280px;
+       left:50%;
+       transform: translate(-52%,-50%);
+       width:530px;
+       font-size: 23px;
+       font-family: 'Noto Serif JP', serif;
+     }
+    }
+
+  }
+  .own-pe{
+    display: none;
+  }
+  .own-td{
+    display: none;
+  }
+
+  .two-pc{
+    display: block;
+    position: relative;
+    background-image: url("https://brighthr.cz/wp-content/uploads/2019/10/world-map.png");
+    background-size: cover;
+    height:460px;
+
+    &::after{
+      content: '';
+      background-color:rgba(0,95,255,0.65);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0px;
+      bottom: 0;
+      height:460px;
+    }
+
+    .main-flex{
+      position: absolute;
+      top:130px;
+      left:50%;
+      transform: translate(-50%,-50%);
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width:800px;
+      z-index: 100;
+      font-family: 'Noto Serif JP', serif;
+
+      & .plus{
+        font-size: 70px;
+        color:#EEEEEE;
+        opacity: 0.3;
+      }
+
+      .sub-flex{
+        display:flex;
+        flex-direction: column;
+       
+        & .title{
+          font-size: 17px;
+          font-weight: bold;
+          text-align: center;
+          color:#EEEEEE;
+        }
+        & h6{
+          font-size: 40px;
+          font-weight: bold;
+          color:#EEEEEE;
+          text-align: center;
+        }
+      }
+
+
+    }
+
+    .ex{
+    position: absolute;
+    top:300px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    text-align: center;
+    color:#EEEEEE;
+    font-size: 13px;
+    width:1000px;
+    font-weight: bold;
+
+     & span{
+       font-size: 20px;
+       font-weight: bold;
+       color:#FFFF33;
+       line-height: 3;
+     }
+    }
+  }
+  .two-td{
+    display: none;
+  }
+
+  .three-pc{
+
+    position: relative;
+    display: block;
+    height:1060px;
+  
+   .box{
+     position: relative;
+     top:300px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-bottom:-80px;
+     width:1000px;
+  
+     .text{
+       & h3{
+        font-size: 5px;
+        margin:0;
+        color:rgba(0,95,255,0.65);
+        padding-bottom:20px;
+       }
+       & p{
+        font-size: 25px;
+        margin:0;
+        font-family: 'Noto Serif JP', serif;
+        padding-bottom:10px;
+        font-weight: bold;
+        
+        & > span{
+          background:linear-gradient(transparent 60%, #ff6 60%);
+        }
+       }
+       & div{
+        margin:10px;
+       }
+      }
+  
+     .pict{
+      width:400px;
+      margin-left: 110px;
+      margin-bottom:100px;
+      
+      & img{
+        width:100%;
+        height:auto;
+      }
+     }
+    }
+  }
+  .box:nth-child(even) {
+    flex-direction: row-reverse;
+  
+    .text {
+      padding-top:100px;
+      position: relative;
+      right:100px;
+     & h3{
+       text-align: left;
+     }
+     & p{
+       text-align: left;
+     }
+     & div{
+        text-align: left;
+     }
+    }
+  
+    .pict {
+      width:1700px;
+      margin-left: 0;
+      margin-right:150px;
+
+      & img{
+        width: 400px;
+        height:250px;
+      }
+    }
+  }
+  .three-td{
+    display: none;
+  }
+
+  .four-pe-pc{
+   
+    height:400px;
+  
+    & h1{
+     top:130px;
+    }
+    & p{
+      top:230px;
+    }
+    #container {
+      top:250px;
+       & .btn {
+        width:300px;
+       }
+    }
+  }
+
+
+  .five-pc{
+    display:block;
+    position: relative;
+    top:270px;
+  
+    & .h1{
+     position: absolute;
+     top:10px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-size: 50px;
+     color:rgba(0,95,255,0.65);
+    }
+  
+    .list{
+      position: relative;
+      top:300px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:1200px;
+  
+      display:flex;
+      flex-direction: row;
+      justify-content:space-around;
+      margin-bottom: 130px;
+  
+     .text{
+       margin-left:-14px;
+
+       & h1{
+         font-size:60px;
+         text-align: left;
+         color:rgba(0,95,255,0.65);
+       }
+
+       & h2{
+        font-size: 21px;
+        margin: 0;
+        font-family: 'Noto Serif JP', serif;
+        padding-bottom:20px;
+        font-size: 30px;
+       }
+       & .go{
+         font-size: 20px;
+         margin:0;
+         width:390px;
+         text-align: left;
+       }
+     }
+  
+     .pict{
+       position: relative;
+       top:10px;
+       right:-10px;
+       width:440px;
+       
+  
+       & img{
+         width:100%;
+         height:auto;
+       }
+     }
+    }
+  
+  }
+  .list:nth-child(even) {
+    flex-direction: row-reverse;
+  
+    .text {
+       position: relative;
+       top:-10px;
+       left:30px;
+       margin-right:100px;
+       text-align: right;
+      & h2{ 
+        text-align: left;
+        font-size: 30px;
+      }
+      & .go{
+        font-size: 20px;
+        width:390px;
+      }
+    }
+  
+    .pict {
+      position: relative;
+      top:20px;
+      left:20px;
+      // margin-left: 100px;
+      width:440px;
+      height:200px;
+      
+    }
+  }
+  .five-td{
+    display: none;
+  }
+  .five-pe{
+    display:none;
+  }
+
+  .six-pc-td{ 
+    height:360px;
+    .main-flex{
+      width:1100px;
+
+      .sub-flex{
+       .border{
+         height:120px;
+           & h2{
+            font-size: 60px;
+           }
+           & h3{
+             padding-left:20px;
+             font-size: 15px;
+           } 
+
+        & p{
+         width:270px;
+         font-size: 18px;
+        }
+
+      }
+    }
+    }
+  }
+
+  .seven{
+    top:540px;
+    height:400px;
+  
+    & h1{
+     top:130px;
+    }
+    & p{
+      top:230px;
+    }
+    #container {
+      top:250px;
+       & .btn {
+        width:300px;
+       }
+    }
+  }
+
+  .eight-pc-td{
+    height:60px;
+    .main-flex{
+      width:1100px;
+
+      .sub-flex{
+       .border{
+         height:120px;
+           & h2{
+            font-size: 50px;
+           }
+           & h3{
+             padding-left:20px;
+           }
+       } 
+
+        & p{
+         width:270px;
+        }
+      }
+    }
+  }
+
+  .nine-pc-td{
+    top:950px;
+    height:370px;
+
+    table{
+      tr{
+       & td{
+         width:500px;
+       }
+      }
+
+    }
+  }
+
+  .ten-pc-td{
+     top:1300px;
+
+      & .opacity{     
+        top:-150px;
+        font-size: 200px;
+    }
+  
+    .flex{
+      width:600px;
+       & img{
+         width: 300px;
+         height: 250px;
+       }
+      .tab{
+        & .title{     
+          font-size: 40px;
+          & > span{
+            font-size: 50px;
+          }
+        }
+        & p{
+          width:650px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .eleven-pc-td{
+    position: relative;
+    top:1500px;
+  
+  }
+ 
+
+
+
+
+
+// position: absolute;
+// top:50%;
+// left:50%;
+// transform: translate(-50%,-50%);
+
+// font-family: 'Noto Serif JP', serif;
+
+//rgba(0,95,255,0.65)

@@ -1,0 +1,688 @@
+$span:#FF3399;
+
+
+.header-pc{ 
+ display: none;
+}
+.header-pe{
+ position: relative;
+ background-color: white;
+ height:80px;
+
+ .flex{
+   position: absolute;
+   top:40px;
+   left:50%;
+   transform: translate(-50%,-50%);
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 360px;
+   & img{
+     width:110px;
+     height:100px;
+   }
+   & p{
+     position: relative;
+     top:35px;
+     font-size: 13px;
+   }
+ }
+}
+.header-td{
+  display: none;
+}
+
+.own-pc{
+  display: none;
+}
+.own-td{
+  display:none;
+}
+.own-pe{
+  display: block;
+  background-image: url("https://clairekinnell.com/wp-content/uploads/2019/07/Contact-Me-Image-1.jpg");
+  background-size: cover;
+  height:307px;
+
+   &::after{
+      content: '';
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80px;
+      bottom: 0;
+      height:307px;
+   }
+
+   .box1{
+     position: absolute;
+     top:205px;
+     left:50%;
+     transform: translate(-55%,-50%);
+     height:210px;
+     width:320px;
+
+     padding: 0.5em 1em;
+     margin: 2em 0;
+     font-weight: bold;
+     background-color:rgba(255,255,255,0.75);
+     z-index: 100;
+
+     & h1{
+       position: absolute;
+       top:60px;
+       left:50%;
+       transform: translate(-55%,-50%);
+       width:275px;
+       font-family: 'Noto Serif JP', serif;
+       font-weight: bold;
+       font-size: 17px;
+     }
+     & p{
+       position: absolute;
+       top:140px;
+       left:50%;
+       transform: translate(-53%,-50%);
+       width:285px;
+       font-family: 'Noto Serif JP', serif;
+       font-size: 11px;
+     }
+    }
+}
+
+
+.two-pc{
+  display: none;
+}
+.two-td{
+  display: none;
+}
+.two-pe{
+  display: block;
+  position: relative;
+  background-image: url("https://brighthr.cz/wp-content/uploads/2019/10/world-map.png");
+  background-size: cover;
+  height:860px;
+
+  &::after{
+    content: '';
+    background-color:rgba(0,95,255,0.65);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    height:860px;
+  }
+
+  .main-flex{
+    position: absolute;
+    top:330px;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    z-index: 100;
+    font-family: 'Noto Serif JP', serif;
+
+    & .plus{
+      font-size: 70px;
+      color:#EEEEEE;
+      opacity: 1;
+      text-align: center;
+    }
+
+    .sub-flex{
+      display:flex;
+      flex-direction: column;
+     
+      & .title{
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        color:#EEEEEE;
+      }
+      & h6{
+        font-size: 40px;
+        font-weight: bold;
+        color:#EEEEEE;
+        text-align: center;
+      }
+    }
+
+
+  }
+
+  .ex{
+  position: absolute;
+  top:720px;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  text-align: center;
+  color:#EEEEEE;
+  font-size: 5px;
+  width:370px;
+  font-weight: bold;
+
+   & span{
+     font-size: 13px;
+     font-weight: bold;
+     color:#FFFF33;
+     line-height: 5;
+   }
+  }
+}
+
+.three-td{
+  display: none;
+}
+.three-pc{
+  display: none;
+}
+.three-pe{
+  position: relative;
+
+   .flex{
+     display: flex;
+     flex-direction: column;
+
+     .list{
+       margin:80px 0;
+      }
+      & img{
+       position: relative;
+       top:130px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       width:320px;
+       height:200px;
+       object-fit: cover;
+       margin-bottom:-100px;
+      
+      }
+      .lang{
+       position: relative;
+       top:50px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       width:330px;
+       border-left:4px solid rgba(0,95,255,0.65);;
+       padding-left:20px;
+    
+        & .strong{
+         font-weight: bold;
+         color:rgba(0,95,255,0.65);
+        }
+        & h2{
+         width:300px;
+         font-family: 'Noto Serif JP', serif;
+         & > span{
+          background:linear-gradient(transparent 60%, #ff6 60%);
+         }
+        }
+
+      }
+      & .work{
+       line-height:25px ;
+       width:300px;
+       position: relative;
+       top:40px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       font-size: 11px;
+      }
+      & .wor{
+       line-height:25px ;
+       width:300px;
+       position: relative;
+       top:70px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       font-size: 11px;
+      }
+     }
+}
+
+
+
+.four-pe-pc{
+  position: relative;
+  top:100px;
+  background-image:url("https://beiz.jp/images_P/watercolor/watercolor_00078.jpg");
+  background-size:cover;
+  height:360px;
+  
+  &::after{
+    content: '';
+    background-color:rgba(0,95,255,0.65);
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  & h1{
+   z-index: 2;
+   position: absolute;
+   top:80px;
+   left:50%;
+   transform: translate(-50%,-50%);
+
+   font-family: 'Noto Serif JP', serif;
+   color:white;
+   font-size: 30px;
+   font-weight: lighter;
+  }
+  & p{
+    z-index: 2;
+    position: absolute;
+    top:170px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:280px;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+  }
+  #container {
+    position: relative;
+    top:180px;
+    text-align: center;
+    z-index: 2;
+     & .btn {
+      background-color:black;
+      color: white;
+      border: 0px solid white;
+      padding: 10px 40px;
+      margin: 50px 0;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      height:60px;
+      width:250px;
+   
+       &:hover {
+        background-color:white;
+        color: black;
+       }
+     }
+  }
+}
+
+.five-pc{
+  display:none;
+}
+.five-td{
+  display:none;
+}
+.five-pe{
+  position: relative;
+  top:100px;
+
+   & .title{
+    position: absolute;
+    top:70px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:rgba(0,95,255,0.65);
+    font-size: 40px;
+  }
+
+  .flex-ul{
+    position: absolute;
+    top:850px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+ 
+    .flex-li{
+      display:flex ;
+      flex-direction: column;
+      
+      & .numbers{
+        text-align:left ;
+        color:rgba(0,95,255,0.65);
+        font-size: 60px;
+      }
+      & img{
+        width:400px;
+      }
+
+      & h2{
+        font-family: 'Noto Serif JP', serif;
+        font-weight: bold;
+        padding:10px 0;
+      }
+
+    }
+  }
+}
+
+.six-pc-td{
+  display:none;
+}
+.six-pe{
+  position: relative;
+  top:1700px;
+  background-color: #EEEEEE;
+  height:580px;
+
+  & h1{
+   position: absolute;
+   top:-2px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   color:rgba(0,95,255,0.65);
+  }
+
+  .main-flex{
+   position: absolute;
+   top:330px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:300px;
+   
+   display: flex;
+   flex-direction: column;
+
+    .sub-flex{
+     display:flex;
+     flex-direction: column;
+
+     .border{
+      border-left:3px solid rgba(0,95,255,0.65);
+      height:90px;
+      
+        & h2{
+         color:rgba(0,95,255,0.65);
+         font-size: 35px;
+         padding-left:20px;
+        }
+        & h3{
+          font-family: 'Noto Serif JP', serif;
+          font-weight: bold;
+          padding-left:20px;
+          font-size: 18px;
+          width:270px;
+        }
+     } 
+     & p{
+      width:200px;
+      padding:10px 0 8px 0;
+      font-size: 12px;
+     }
+    }
+  }
+}
+
+
+.seven{
+  position: relative;
+  top:1700px;
+  background-image:url("https://beiz.jp/images_P/watercolor/watercolor_00078.jpg");
+  background-size:cover;
+  height:360px;
+  
+  &::after{
+    content: '';
+    background-color:rgba(0,95,255,0.65);
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  & h1{
+   z-index: 2;
+   position: absolute;
+   top:80px;
+   left:50%;
+   transform: translate(-50%,-50%);
+
+   font-family: 'Noto Serif JP', serif;
+   color:white;
+   font-size: 30px;
+   font-weight: lighter;
+  }
+  & p{
+    z-index: 2;
+    position: absolute;
+    top:170px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:280px;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+  }
+  #container {
+    position: relative;
+    top:180px;
+    text-align: center;
+    z-index: 2;
+     & .btn {
+      background-color:black;
+      color: white;
+      border: 0px solid white;
+      padding: 10px 40px;
+      margin: 50px 0;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      height:60px;
+      width:250px;
+   
+       &:hover {
+        background-color:white;
+        color: black;
+       }
+     }
+  }
+}
+
+.eight-pc-td{
+  display: none;
+}
+.eight-pe{
+  position: relative;
+  top:1750px;
+  height:580px;
+
+  & h1{
+   position: absolute;
+   top:-2px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   color:rgba(0,95,255,0.65);
+  }
+
+  .main-flex{
+   position: absolute;
+   top:300px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:300px;
+   
+   display: flex;
+   flex-direction: column;
+
+    .sub-flex{
+     display:flex;
+     flex-direction: column;
+
+     .border{
+      border-left:3px solid rgba(0,95,255,0.65);
+      height:90px;
+      
+        & h2{
+         color:rgba(0,95,255,0.65);
+         font-size: 35px;
+         padding-left:20px;
+        }
+        & h3{
+          font-family: 'Noto Serif JP', serif;
+          font-weight: bold;
+          padding-left:20px;
+          font-size: 18px;
+          width:270px;
+        }
+     } 
+     & p{
+      width:300px;
+      padding:10px 0 8px 0;
+      font-size: 12px;
+     }
+    }
+  }
+}
+
+.nine-pc-td{
+  display: none;
+}
+.nine-pe{
+  position: relative;
+  top:1780px;
+  background-color: #EEEEEE;
+  height:360px;
+
+  & h1{
+   position: absolute;
+   top:-2px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   font-size: 25px;
+   color:rgba(0,95,255,0.65);
+  }
+
+  table{
+   position: absolute;
+   top:190px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:300px;
+    tr{
+     border-top:1px solid silver;
+     border-bottom:1px solid silver;
+
+     & th{
+      width:300px;
+      text-align: center;
+      padding:30px 0;
+     }
+     & td{
+       width:700px;
+       text-align: center;
+     }
+    }
+  }
+}
+
+.ten-pc-td{
+  display: none;
+}
+.ten-pe{
+  display:block;
+  position: relative;
+  top:2200px;
+
+  img{
+    position: absolute;
+    top:-277px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 230px;
+
+  }
+  
+   & .opacity{
+    position: absolute;
+    top:-160px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:rgba(0, 94, 255, 0.219);
+    font-size: 60px;
+    z-index:100;
+   }
+  
+    .flex{
+      position: absolute;
+      top:10px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width:370px;
+  
+      .tab{
+        display: flex;
+        flex-direction: column;
+  
+        & .title{
+          font-family: 'Noto Serif JP', serif;
+          font-size: 25px;
+          text-align: center;
+          padding-bottom:30px;
+          
+          & > span{
+            font-size: 35px;
+          }
+        }
+        & p{
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+    }
+}
+
+.eleven-pe{
+  position: relative;
+  top:2350px;
+  background-color: black;
+  display: block;
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .tab{
+      padding-top: 20px;
+      color:white;
+      font-size: 10px;
+    
+      & .last{
+        color:silver;
+      }
+    }
+  }
+}
+
+.eleven-pc-td{
+  display: none;
+}
+
+
+
+
+// position: absolute;
+// top:50%;
+// left:50%;
+// transform: translate(-50%,-50%);
+
+// font-family: 'Noto Serif JP', serif;
+//rgba(0,95,255,0.65)
